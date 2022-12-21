@@ -1,0 +1,35 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run hardhat tests",
+      "request": "launch",
+      "runtimeArgs": [
+        "test"
+      ],
+      "runtimeExecutable": "yarn",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "console": "integratedTerminal"
+    },
+    {
+      "name": "Run hardhat node",
+      "request": "launch",
+      "runtimeArgs": [
+        "hardhat",
+        "node",
+        "--show-stack-traces",
+        "--network",
+        "hardhat"
+      ],
+      "runtimeExecutable": "npx",
+      "skipFiles": [
+        "<node_internals>/**"
+      ],
+      "type": "node",
+      "console": "integratedTerminal"
+    },
+  ]
+}
